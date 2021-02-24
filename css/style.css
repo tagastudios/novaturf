@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9338,6 +9339,142 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variant: small-caps !important;
+}
+
+.navbar-brand img {
+  filter: drop-shadow(-1px -1px 1px #0f8811);
+}
+
+.navbar-brand div {
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.navbar-brand div .nav-nova {
+  color: #ebebeb !important;
+}
+
+.navbar-brand div .nav-turf {
+  color: #0f8811 !important;
+}
+
+.navbar-brand div .nav-slogan {
+  font-size: 1.15rem;
+  margin-top: -20px !important;
+  margin-bottom: 10px !important;
+  color: rgba(235, 235, 235, 0.7) !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand img {
+  filter: none;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand div .nav-nova {
+  color: #1e1e1e !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand div .nav-turf {
+  color: #0f8811 !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand div .nav-slogan {
+  font-size: 1.15rem;
+  margin-top: -20px !important;
+  margin-bottom: 10px !important;
+  color: #666 !important;
+  display: none;
+}
+
+.sqft {
+  font-style: italic;
+  color: #333;
+}
+
+.faqs {
+  font-weight: 700;
+}
+
+.faq-item {
+  padding: 20px;
+}
+
+.ftco-footer-social li {
+  margin: 0 10px !important;
+}
+
+@media screen and (max-width: 501px) {
+  .hide-xs {
+    display: none !important;
+  }
+  .hide-sm {
+    display: block !important;
+  }
+  .hide-md {
+    display: block !important;
+  }
+  .ftco-footer-social {
+    margin-left: 20px !important;
+  }
+  .ftco-footer-social li {
+    margin: 0 12px !important;
+  }
+  .footer-slogan {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .ftco-footer-social {
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hide-md {
+    display: none !important;
+  }
+  .ftco-footer-social {
+    margin-left: 50px !important;
+  }
+  .ftco-footer-social li {
+    margin: 0 10px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hide-xs {
+    display: none !important;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+  .ftco-footer-social {
+    margin-left: 50px !important;
+  }
+  .ftco-footer-social li {
+    margin: 0 6px !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hide-lg {
+    display: none !important;
+  }
+  .ftco-footer-social li {
+    margin: 0 12px !important;
+  }
+}
+
 body {
   font-family: "Spectral", serif;
   background: #fff;
@@ -9991,7 +10128,7 @@ h5,
 
 .header-video video {
   min-width: 100%;
-  max-height: 700px;
+  max-height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -10981,7 +11118,7 @@ textarea.form-control {
 
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 3em 0;
   }
 }
 
