@@ -7,7 +7,7 @@ var emailnumber;
 // Counter Clicks
 function clicked() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.countapi.xyz/hit/novaturfcorp.com/contactform1");
+  xhr.open("GET", "https://api.countapi.xyz/hit/novaturfcorp.com/contactform");
   xhr.responseType = "json";
   xhr.onload = function () {
     emailnumber = this.response.value;
@@ -36,6 +36,10 @@ function sendEmail() {
         Thanks for getting in touch! We should reply back within 24 hours
       </div>`;
       btnSend.innerHTML = "Send Message";
+      form.name.value = "";
+      form.email.value = "";
+      form.subject.value = "";
+      form.message.value = "";
     },
     function (error) {
       respEmail.innerHTML = `
@@ -43,6 +47,10 @@ function sendEmail() {
         Something went wrong.. Please use our live chat instead, is easier!
       </div>`;
       btnSend.innerHTML = "Send Message";
+      form.name.value = "";
+      form.email.value = "";
+      form.subject.value = "";
+      form.message.value = "";
     }
   );
 }
