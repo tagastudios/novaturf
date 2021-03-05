@@ -9339,6 +9339,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.text-success {
+  color: #0a8a1f !important;
+  text-align: center !important;
+  font-size: 0.9rem !important;
+}
+
+.text-error {
+  color: #b72121 !important;
+  text-align: center !important;
+  font-size: 0.9rem !important;
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -9410,6 +9422,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .ftco-footer-social li {
   margin: 0 10px !important;
+}
+
+.g-maps {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 501px) {
@@ -9519,6 +9535,9 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .g-maps {
+    margin-top: 0;
   }
 }
 

@@ -20,9 +20,18 @@
 
   <link rel="stylesheet" href="css/flaticon.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_M2n3pfWoy99AI3nU5ZXAx");
+    })();
+  </script>
 </head>
 
 <body>
+
   <!-- NAV -->
   <div class="wrap">
     <div class="container">
@@ -151,6 +160,10 @@
                       <span>Phone:</span>
                       <a href="tel:+1-954-826-5606">+1 (954) 826 - 5606</a>
                     </p>
+                    <p>
+                      <span>Phone:</span>
+                      <a href="tel:+1-305-748-0156">+1 (305) 748 - 0156</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -213,9 +226,14 @@
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary" />
+                          <button type="submit" id="btnSend"
+                            class="btn btn-primary btn-block d-flex justify-content-center align-items-center">
+                            Send Message
+                          </button>
                           <div class="submitting"></div>
                         </div>
+                      </div>
+                      <div class="respEmail col-md-12 text-center" id="respEmail">
                       </div>
                     </div>
                   </form>
@@ -225,7 +243,7 @@
                 <!-- <div id="map" class="map"></div> -->
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448.800206709217!2d-80.3271423!3d25.8562548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedcc01f9046955a4!2sNovaTurf%20Corp%20-%20Artificial%20Grass!5e0!3m2!1sen!2sus!4v1614405338380!5m2!1sen!2sus"
-                  width="600" height="auto" style="border:0; min-height: 400px;" allowfullscreen=""
+                  class="g-maps" width="600" height="auto" style="border:0; min-height: 400px;" allowfullscreen=""
                   loading="lazy"></iframe>
               </div>
             </div>
@@ -407,6 +425,7 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
+  <script src="js/email.js"></script>
   <script src="js/main.js"></script>
 </body>
 
